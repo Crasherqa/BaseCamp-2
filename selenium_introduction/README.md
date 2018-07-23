@@ -1,9 +1,14 @@
 # Selenium introduction
 
-1. Install WebDriver due to instruction:
-http://selenium-python.readthedocs.io/installation.html
+1. Install *WebDriver* due to instruction:
+    http://selenium-python.readthedocs.io/installation.html
 
-2. Run *main.py* script with browser name as argument.
+2. Install *selenium* python package:
+    ```
+    pip install selenium
+    ```
+
+3. Run *main.py* script with browser name as argument.
     
     Example:
     ```
