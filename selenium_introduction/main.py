@@ -2,7 +2,7 @@ import unittest
 import argparse
 import time
 import sys
-import selenium_patterns.webdriver as webdrivers
+import selenium_page_object.webdriver as webdrivers
 
 
 class TestCase(unittest.TestCase):

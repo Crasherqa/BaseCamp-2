@@ -1,7 +1,7 @@
 import unittest
 import argparse
 import sys
-import selenium_patterns.webdriver as webdrivers
+import selenium_page_object.webdriver as webdrivers
 import functions
 
 
