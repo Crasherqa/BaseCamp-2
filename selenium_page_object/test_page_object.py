@@ -1,6 +1,7 @@
 import unittest
 
 from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.common.keys import Keys
 
 from selenium_page_object.page_object import (
     GoogleSearchPage,
@@ -18,8 +19,7 @@ class TestCase(unittest.TestCase):
         words = search_text.lower().split()
 
         with GoogleSearchPage(self.driver) as search_page:
-            search_page.search_input.value = search_text
-            search_page.search_button.click()
+            search_page.search_input.value = search_text + Keys.ENTER
 
         with GoogleSearchResultPage(self.driver) as result_page:
             for link in result_page.found_link.get_all():
