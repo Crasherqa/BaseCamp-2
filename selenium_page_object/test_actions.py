@@ -14,7 +14,6 @@ class TestCase(unittest.TestCase):
         Click at all table headers and after that
         verify that table sorted correctly
         """
-        self.driver.get('')
 
     def testKeyPress(self):
         """
