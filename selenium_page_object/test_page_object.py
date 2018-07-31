@@ -23,7 +23,7 @@ class TestCase(unittest.TestCase):
 
         with GoogleSearchResultPage(self.driver) as result_page:
             for link in result_page.found_link.get_all():
-                link_text = link.text
+                link_text = link.text.lower()
                 assert all(text in link_text for text in words)
 
     def tearDown(self):
